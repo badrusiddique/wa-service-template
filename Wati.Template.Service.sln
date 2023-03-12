@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wati.Template.Api", "src\Wati.Template.Api\Wati.Template.Api.csproj", "{2E6CBF67-7778-4B66-B529-CEA2016634DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Common", "src\Wati.Template.Common\Wati.Template.Common.csproj", "{4D38693D-0653-41A5-8514-ED9B2F07A9EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Orchestartor", "src\Wati.Template.Orchestartor\Wati.Template.Orchestartor.csproj", "{989BD488-59D5-495E-A937-9A6488C61A3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Service", "src\Wati.Template.Service\Wati.Template.Service.csproj", "{9640DBC1-07CF-405A-980E-2453716E999C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Repository", "src\Wati.Template.Repository\Wati.Template.Repository.csproj", "{0B30B608-DADB-48A1-BE95-6CC572745FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Data", "src\Wati.Template.Data\Wati.Template.Data.csproj", "{071C4EDE-C012-468F-85DD-F1C1B497A517}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{EBA0508D-98D3-4C07-88BD-EAA76A409FDD}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0D5D0C14-6D94-4A76-900A-103962D04D8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{A68BF229-42CD-4AF3-8BEB-0C87E3F5EDCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{8FEB8502-15AE-4C63-AD1E-F806DD607FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Api.UnitTests", "tests\unit\Wati.Template.Api.UnitTests\Wati.Template.Api.UnitTests.csproj", "{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Orchestrator.UnitTests", "tests\unit\Wati.Template.Orchestrator.UnitTests\Wati.Template.Orchestrator.UnitTests.csproj", "{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati.Template.Service.IntegrationTests", "tests\integration\Wati.Template.Service.IntegrationTests\Wati.Template.Service.IntegrationTests.csproj", "{D7CB45ED-C06C-492F-A945-837D3B0A1FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E6CBF67-7778-4B66-B529-CEA2016634DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6CBF67-7778-4B66-B529-CEA2016634DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6CBF67-7778-4B66-B529-CEA2016634DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6CBF67-7778-4B66-B529-CEA2016634DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D38693D-0653-41A5-8514-ED9B2F07A9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D38693D-0653-41A5-8514-ED9B2F07A9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D38693D-0653-41A5-8514-ED9B2F07A9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D38693D-0653-41A5-8514-ED9B2F07A9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989BD488-59D5-495E-A937-9A6488C61A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989BD488-59D5-495E-A937-9A6488C61A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989BD488-59D5-495E-A937-9A6488C61A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989BD488-59D5-495E-A937-9A6488C61A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9640DBC1-07CF-405A-980E-2453716E999C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9640DBC1-07CF-405A-980E-2453716E999C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9640DBC1-07CF-405A-980E-2453716E999C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9640DBC1-07CF-405A-980E-2453716E999C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B30B608-DADB-48A1-BE95-6CC572745FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B30B608-DADB-48A1-BE95-6CC572745FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B30B608-DADB-48A1-BE95-6CC572745FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B30B608-DADB-48A1-BE95-6CC572745FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071C4EDE-C012-468F-85DD-F1C1B497A517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071C4EDE-C012-468F-85DD-F1C1B497A517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071C4EDE-C012-468F-85DD-F1C1B497A517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071C4EDE-C012-468F-85DD-F1C1B497A517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CB45ED-C06C-492F-A945-837D3B0A1FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CB45ED-C06C-492F-A945-837D3B0A1FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CB45ED-C06C-492F-A945-837D3B0A1FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CB45ED-C06C-492F-A945-837D3B0A1FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E6CBF67-7778-4B66-B529-CEA2016634DE} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{4D38693D-0653-41A5-8514-ED9B2F07A9EB} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{989BD488-59D5-495E-A937-9A6488C61A3B} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{9640DBC1-07CF-405A-980E-2453716E999C} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{0B30B608-DADB-48A1-BE95-6CC572745FC2} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{071C4EDE-C012-468F-85DD-F1C1B497A517} = {2D7B5F99-F5BA-4F97-8CE1-C2FC4D4B3E79}
+		{A68BF229-42CD-4AF3-8BEB-0C87E3F5EDCB} = {0D5D0C14-6D94-4A76-900A-103962D04D8F}
+		{8FEB8502-15AE-4C63-AD1E-F806DD607FCD} = {0D5D0C14-6D94-4A76-900A-103962D04D8F}
+		{782F8A0D-0B02-4B4D-8E83-F34DE2C6BD6A} = {A68BF229-42CD-4AF3-8BEB-0C87E3F5EDCB}
+		{ABDEB0FB-8AF3-479E-A5BC-912233ECDEF3} = {A68BF229-42CD-4AF3-8BEB-0C87E3F5EDCB}
+		{D7CB45ED-C06C-492F-A945-837D3B0A1FF3} = {8FEB8502-15AE-4C63-AD1E-F806DD607FCD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {440106BB-F4CA-4767-97FA-997097EFF452}
+	EndGlobalSection
+EndGlobal

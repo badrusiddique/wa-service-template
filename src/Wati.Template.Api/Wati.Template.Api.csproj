@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="9.4.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.12" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.12">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.12" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.12" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="6.0.12" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
+	  <PackageReference Include="Serilog" Version="2.12.0" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+	  <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+	  <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+	  <PackageReference Include="Serilog.Exceptions" Version="5.6.0" />
+	  <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+	  <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+	  <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.4.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wati.Template.Orchestartor\Wati.Template.Orchestartor.csproj" />
+  </ItemGroup>
+
+</Project>

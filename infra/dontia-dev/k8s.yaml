@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{camel}}-deployment
+spec:
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: {{camel}}-deployment
+  template:
+    metadata:
+      labels:
+        app: {{camel}}-deployment
+    spec:
+      containers:
+      - name: {{camel}}-deployment
+        imagePullPolicy: Always
+        image: asia.gcr.io/mazecare-cicd/{{camel}}
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: Development
+        - name: APP_NAME
+          value: {{camel}}-service
+        - name: DEFAULT_STORE_PROVIDER_ID
+          value: postgreSQL
+        - name: DEFAULT_STORE_CONNECTION_STRING
+          value: 'Host=XXX.XXX.XXX.XXX;Database={{camel||plural}};Username=postgres;Password=XXX'
+        ports:
+          - containerPort: 80
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "500Mi"
+          limits:
+            cpu: "250m"
+            memory: "500Mi"          
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 80
+          initialDelaySeconds: 30
+          periodSeconds: 5
+          successThreshold: 1
+      imagePullSecrets:
+       - name: mazecare-registry
+        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{camel}}-service
+spec:
+  selector:
+    app: {{camel}}-deployment
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
