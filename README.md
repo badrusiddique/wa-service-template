@@ -100,33 +100,33 @@ Please check the Jenkinsfile for more information about the pipeline.
 
 
 ## Folder Structure ##
-Wati.Template.Service
+Wa.Template.Service
 * src
-  * Wati.Template.Api
+  * Wa.Template.Api
     - should contain all web-api related stuff (controller, authorization, validators, exceptions etc)
-  * Wati.Template.Common
+  * Wa.Template.Common
     - common extension, utils, helpers, domain-models, request/response dtos used across the solution
     - should **not** have any project reference
-  * Wati.Template.Orchestrator
+  * Wa.Template.Orchestrator
       - orchestrator is used to convert input API request DTO to domain-models for business operations
       - this module should **not** contain business logic
       - multiple services can be DI in this to get data from different data context
-  * Wati.Template.Service
+  * Wa.Template.Service
       - service layer will always work on domain-models, input and output will always be domain-models
       - should not run business logic on dtos/entities
       - each service will only DI one domain data repository, if need data from another domain use orchestrator layer along with builder pattern
-  * Wati.Template.Repository
+  * Wa.Template.Repository
       - repository layer will always work on entities, input and output will always be entities
       - repository layer is responsible to return data either from DatabaseContext or external ThirdParty API data context
-  * Wati.Template.Data
+  * Wa.Template.Data
       - data layer is only for Database context to connect, migrate and configure based on database entities
 * tests
     * integration
-      * Wati.Template.Service.IntegrationTests
+      * Wa.Template.Service.IntegrationTests
           - should contain all e2e api endpoint test with and without data response
           - should run an in-memory/file-based stub database to impersonate and execute all endpoints
     * unit (every project should have an equivalent unit test project matching the exact folder structure)
-        * Wati.Template.Api.UnitTests
+        * Wa.Template.Api.UnitTests
             - should contain all edge cases under unit test with >90% code coverage
 
 
